@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CuddleTraining</title>
+    <link rel="stylesheet" type="text/css" href="bodybuilding.css">
+    <script src="bodybuilding.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Cuddle Training</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#workouts">Workouts</a></li>
+            <li><a href="#nutrition">Nutrition</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="workouts">
+            <h2>Workouts</h2>
+            <p>Please click the links below to see the exercises for different training styles.</p>
+        </section>
+
+        <section id="nutrition">
+            <h2>Nutrition</h2>
+            <form id="food-search">
+                <input type="text" id="food-input" placeholder="Enter a food">
+                <div id="suggestions" class="suggestions"></div> <!-- This is where the suggestions will appear -->
+                <button type="submit">Search</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Food</th>
+                            <th>Calories</th>
+                            <th>Protein (g)</th>
+                            <th>Fat (g)</th>
+                            <th>Carbs (g)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data rows will be inserted here by the JavaScript -->
+                    </tbody>
+                </table>
+            <p>Here, you will find nutrition information.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Here, you can find how to contact us.</p>
+        </section>
+    </main>
+    <button id="home-button" onclick="window.location.href='index.html'">Back to Home</button>
+    <footer>
+        <p>© 2023 My Bodybuilding Website</p>
+    </footer>
+</body>
+</html>

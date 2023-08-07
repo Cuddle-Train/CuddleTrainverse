@@ -1,0 +1,97 @@
+body {
+    background-color: #121212; /* a dark grey */
+    color: #f0f0f0; /* a light grey */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1F1F1F; /* slightly lighter than the body background */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ff4747; /* a vibrant red */
+    margin: 0;
+}
+
+nav {
+    background-color: #1F1F1F; /* same as header */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ff4747; /* same red as header */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #1F1F1F; /* same as header and nav */
+    color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    background-color: #ff4747; /* same red as header */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff7474; /* a lighter red for hover effect */
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Changed from 560px to 200px */
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.video-grid iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.main-video {
+    grid-column: span 2;
+}
+
+.shorts-video {
+    width: 175px;
+}
