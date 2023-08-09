@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #fcff59;
+}
+
+header {
+    background-color: #24292E;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+nav .social-icons {
+    display: flex;
+    justify-content: left; /* Align icons to the left */
+    padding: 1rem;
+    background: #333;
+    z-index: 1;
+}
+
+nav .social-icons li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav .social-icons li a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.5s;
+}
+
+nav .social-icons .instagram:hover {
+    color: #E1306C;
+}
+
+nav .social-icons .twitter:hover {
+    color: #1DA1F2;
+}
+
+nav .social-icons .youtube:hover {
+    color: #FF0000;
+}
+
+nav .social-icons .snapchat:hover {
+    color: #FFFC00;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #24292E;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#home-button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #24292E;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #373737;
+}
+
+#home-button:hover {
+    background-color: #373737;
+    cursor: pointer;
+}
+
+.social-icons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background: #333;
+    z-index: 1;
+}
+
+#meet-the-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 20px;
+}
+
+.team-member {
+    width: 300px;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.flip-card-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    perspective: 1000px; /* Add perspective */
+    position: relative;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    perspective: 1000px; /* Add perspective */
+    position: relative;
+}
+
+.flip-card.is-flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    z-index: 2;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    z-index: 1;
+}

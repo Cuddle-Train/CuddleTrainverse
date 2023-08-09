@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #24292E;
+    color: #fff;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start; /* changed to flex-start to align it to the left */
+    padding: 1rem;
+    background: #24292E;
+    z-index: 1; /* to make sure it sits on top of other content */
+    position: fixed; /* to keep it in place while scrolling */
+    top: 0; /* align it to the top of the page */
+    left: 0; /* align it to the left of the page */
+}
+
+.social-icons li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-icons li a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.5s;
+}
+
+.social-icons .instagram:hover {
+    color: #E1306C;
+}
+
+.social-icons .twitter:hover {
+    color: #1DA1F2;
+}
+
+.social-icons .youtube:hover {
+    color: #FF0000;
+}
+
+.social-icons .snapchat:hover {
+    color: #FFFC00;
+}
+
+#home-button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #24292E;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #373737;
+}
+
+#home-button:hover {
+    background-color: #373737;
+    cursor: pointer;
+}

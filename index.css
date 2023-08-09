@@ -74,7 +74,6 @@ body {
     pointer-events: none;
 }
 
-/* Add these new classes */
 .bg-bodybuilding {
     background-color: #ffca6d;
 }
@@ -86,7 +85,11 @@ body {
 .bg-travel {
     background-color: #6dffb9;
 }
-  
+
+.bg-about-me {
+    background-color: #ffffff;
+}
+ 
   .menu li:first-child a:hover ~ .bg {
     background: #ffca6d;
 }
@@ -99,12 +102,16 @@ body {
     background: #6dffb9;
 }
 
+.menu li:nth-child(4) a:hover ~ .bg {
+    background: #ffffff;
+}
+
 .social-icons {
     display: flex;
     justify-content: center;
     padding: 1rem;
     background: #333;
-    z-index: 0; /* Decrease z-index */
+    z-index: 0;
 }
 
 .social-icons li {
@@ -132,4 +139,29 @@ body {
 
 .social-icons .snapchat:hover {
     color: #FFFC00; /* Snapchat's brand color */
+}
+
+.page-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: #333;
+    z-index: 1;
+    list-style: none;
+}
+
+.page-links li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.page-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-links li a:hover {
+    color: #ffff79;
+    text-decoration: underline;
 }
