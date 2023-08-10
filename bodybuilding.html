@@ -4,7 +4,6 @@
     <title>CuddleTraining</title>
     <link rel="stylesheet" type="text/css" href="bodybuilding.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <script src="bodybuilding.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,55 +17,58 @@
             <li><a class="youtube" href="https://www.youtube.com/user/butterfiend"><i class="fab fa-youtube"></i></a></li>
             <li><a class="snapchat" href="https://www.snapchat.com/add/your_username"><i class="fab fa-snapchat"></i></a></li>
         </ul>
-        <ul>
-            <li><a href="#workouts">Workouts</a></li>
-            <li><a href="#nutrition">Nutrition</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
     </nav>
 
     <main>
         <section id="workouts">
             <h2>Workouts</h2>
-            <p>Please click the links below to see the exercises for different training styles.</p>
-            <select id="workout-selector">
-                <option value="back">
-                    <img src="Images for BB Page/back.avif" alt="Back" width="50"> Back
-                </option>
-                <option value="chest">
-                    <img src="Images for BB Page/Chest.avif" alt="Chest" width="50"> Chest
-                </option>
-                <option value="legs">
-                    <img src="Images for BB Page/legs.jpg" alt="Legs" width="50"> Legs
-                </option>
-                <option value="shoulders">
-                    <img src="Images for BB Page/shoulders.webp" alt="Shoulders" width="50"> Shoulders
-                </option>
-                <option value="arms">
-                    <img src="Images for BB Page/arm.png" alt="Arms" width="50"> Arms
-                </option>
-            </select>
+            <p>Please click the blocks below to see the exercises for different training styles.</p>
+            <div class="workout-options">
+                <div class="option" data-image-src="Images for BB Page/back.avif">
+                    <span>Back</span>
+                </div>
+                <div class="option" data-image-src="Images for BB Page/Chest.avif">
+                    <span>Chest</span>
+                </div>
+                <div class="option" data-image-src="Images for BB Page/legs.jpg">
+                    <span>Legs</span>
+                </div>
+                <div class="option" data-image-src="Images for BB Page/shoulders.webp">
+                    <span>Shoulders</span>
+                </div>
+                <div class="option" data-image-src="Images for BB Page/arm.png">
+                    <span>Arms</span>
+                </div>
+                <div class="option small-block" data-image-src="path_to_image6.jpg">
+                    <img src="path_to_image6.jpg" alt="Upper">
+                    <span>Upper</span>
+                </div>
+                <div class="option small-block" data-image-src="path_to_image6.jpg"></div>
+                    <img src="path_to_image7.jpg" alt="Lower">
+                    <span>Lower</span>
+                </div>
+            </div>
         </section>
         <section id="nutrition">
             <h2>Nutrition</h2>
             <form id="food-search">
                 <input type="text" id="food-input" placeholder="Enter a food">
-                <div id="suggestions" class="suggestions"></div> <!-- This is where the suggestions will appear -->
+                <div id="suggestions" class="suggestions"></div>
                 <button type="submit">Search</button>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Food</th>
-                            <th>Calories</th>
-                            <th>Protein (g)</th>
-                            <th>Fat (g)</th>
-                            <th>Carbs (g)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Data rows inserted here by the JavaScript -->
-                    </tbody>
-                </table>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Food</th>
+                        <th>Calories</th>
+                        <th>Protein (g)</th>
+                        <th>Fat (g)</th>
+                        <th>Carbs (g)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
             <p>Here, you will find nutrition information.</p>
         </section>
 
@@ -75,9 +77,13 @@
             <p>Here, you can find how to contact us.</p>
         </section>
     </main>
+
     <button id="home-button" onclick="window.location.href='index.html'">Back to Home</button>
+
     <footer>
         <p>© 2023 The Cuddle TrainVerse</p>
     </footer>
+
+    <script src="bodybuilding.js" defer></script>
 </body>
 </html>

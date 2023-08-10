@@ -232,3 +232,82 @@ th {
 #workouts span {
     vertical-align: middle;
 }
+
+.workout-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* This line is changed */
+    align-content: flex-start;
+}
+
+
+.workout-options .option {
+    flex: 0 0 150px; /* Setting a fixed width and height for the blocks to make them square */
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    line-height: 150px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.workout-options .small-block {
+    flex: 0 0 150px;
+    width: 150px;
+    height: 150px;
+}
+
+.workout-options .option::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.workout-options .option[data-image-src="Images for BB Page/back.avif"]::before {
+    background-image: url('Images for BB Page/back.avif');
+}
+
+.workout-options .option[data-image-src="Images for BB Page/Chest.avif"]::before {
+    background-image: url('Images for BB Page/Chest.avif');
+}
+
+.workout-options .option[data-image-src="Images for BB Page/legs.jpg"]::before {
+    background-image: url('Images for BB Page/legs.jpg');
+}
+
+.workout-options .option[data-image-src="Images for BB Page/shoulders.webp"]::before {
+    background-image: url('Images for BB Page/shoulders.webp');
+}
+
+.workout-options .option[data-image-src="Images for BB Page/arm.png"]::before {
+    background-image: url('Images for BB Page/arm.png');
+}
+
+.workout-options .option[data-image-src="path_to_image6.jpg"]::before {
+    background-image: url('path_to_image6.jpg');
+}
+
+.workout-options .option[data-image-src="path_to_image7.jpg"]::before {
+    background-image: url('path_to_image7.jpg');
+}
+
+.workout-options .option span {
+    position: relative;
+    z-index: 1;  /* To ensure text always appears above the background image */
+}
+
+.workout-options .option:hover {
+    background-color: rgba(255,165,0, 0.7);
+}
+
