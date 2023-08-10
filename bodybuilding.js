@@ -97,3 +97,19 @@ window.addEventListener('load', function() {
         loadingScreen.style.display = 'none';
     }
 });
+
+const dropdown = document.querySelector('.custom-dropdown');
+const selectedOption = document.querySelector('.selected-option');
+const options = document.querySelector('.dropdown-options');
+
+selectedOption.addEventListener('click', () => {
+    options.classList.toggle('hidden');
+});
+
+options.querySelectorAll('.option').forEach(option => {
+    option.addEventListener('click', () => {
+        selectedOption.innerHTML = option.innerHTML;
+        options.classList.add('hidden');
+    });
+});
+

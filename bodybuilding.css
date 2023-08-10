@@ -182,3 +182,53 @@ th {
 .social-icons .snapchat:hover {
     color: #FFFC00;
 }
+
+.custom-dropdown {
+    position: relative;
+    width: 100px; /* or whatever width you desire */
+}
+
+.selected-option, .option {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    z-index: 10;
+    background: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.option img {
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 5px auto;  /* centers the image horizontally */
+}
+
+#workouts option {
+    padding: 5px;
+}
+
+#workouts img {
+    max-width: 40px;  /* Adjust as needed */
+    max-height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;  /* Space between the image and the text */
+}
+
+#workouts span {
+    vertical-align: middle;
+}

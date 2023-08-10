@@ -5,12 +5,6 @@
     <link rel="stylesheet" type="text/css" href="bodybuilding.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <script src="bodybuilding.js" defer></script>
-    <ul class="social-icons">
-        <li><a class="instagram" href="https://www.instagram.com/cuddle_train/?hl=en-gb"><i class="fab fa-instagram"></i></a></li>
-        <li><a class="twitter" href="https://twitter.com/cuddle_train?lang=en"><i class="fab fa-twitter"></i></a></li>
-        <li><a class="youtube" href="https://www.youtube.com/user/butterfiend"><i class="fab fa-youtube"></i></a></li>
-        <li><a class="snapchat" href="https://www.snapchat.com/add/your_username"><i class="fab fa-snapchat"></i></a></li>
-    </ul>
 </head>
 <body>
     <header>
@@ -18,6 +12,12 @@
     </header>
 
     <nav>
+        <ul class="social-icons">
+            <li><a class="instagram" href="https://www.instagram.com/cuddle_train/?hl=en-gb"><i class="fab fa-instagram"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/cuddle_train?lang=en"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="youtube" href="https://www.youtube.com/user/butterfiend"><i class="fab fa-youtube"></i></a></li>
+            <li><a class="snapchat" href="https://www.snapchat.com/add/your_username"><i class="fab fa-snapchat"></i></a></li>
+        </ul>
         <ul>
             <li><a href="#workouts">Workouts</a></li>
             <li><a href="#nutrition">Nutrition</a></li>
@@ -26,12 +26,27 @@
     </nav>
 
     <main>
-        
         <section id="workouts">
             <h2>Workouts</h2>
             <p>Please click the links below to see the exercises for different training styles.</p>
+            <select id="workout-selector">
+                <option value="back">
+                    <img src="Images for BB Page/back.avif" alt="Back" width="50"> Back
+                </option>
+                <option value="chest">
+                    <img src="Images for BB Page/Chest.avif" alt="Chest" width="50"> Chest
+                </option>
+                <option value="legs">
+                    <img src="Images for BB Page/legs.jpg" alt="Legs" width="50"> Legs
+                </option>
+                <option value="shoulders">
+                    <img src="Images for BB Page/shoulders.webp" alt="Shoulders" width="50"> Shoulders
+                </option>
+                <option value="arms">
+                    <img src="Images for BB Page/arm.png" alt="Arms" width="50"> Arms
+                </option>
+            </select>
         </section>
-
         <section id="nutrition">
             <h2>Nutrition</h2>
             <form id="food-search">
@@ -49,7 +64,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Data rows will be inserted here by the JavaScript -->
+                        <!-- Data rows inserted here by the JavaScript -->
                     </tbody>
                 </table>
             <p>Here, you will find nutrition information.</p>
