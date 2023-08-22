@@ -240,7 +240,6 @@ th {
     align-content: flex-start;
 }
 
-
 .workout-options .option {
     flex: 0 0 150px; /* Setting a fixed width and height for the blocks to make them square */
     width: 150px;
@@ -254,12 +253,6 @@ th {
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
-}
-
-.workout-options .small-block {
-    flex: 0 0 150px;
-    width: 150px;
-    height: 150px;
 }
 
 .workout-options .option::before {
@@ -311,3 +304,25 @@ th {
     background-color: rgba(255,165,0, 0.7);
 }
 
+.parallax-container {
+    /* Set the height of the container */
+    height: 70vh;  /* Adjust based on how much of the viewport height you want it to cover */
+    
+    /* Set the background image */
+    background-image: url("Images for BB Page/parallax-gym.webp");
+    
+    /* Create the parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    /* Vertical centering of the content inside the parallax container */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(255, 255, 255);  /* Adjust text color if needed */
+}
