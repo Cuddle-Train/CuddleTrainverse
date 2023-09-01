@@ -1,4 +1,3 @@
-// When the search form is submitted, get the nutrition data and update the table
 let foodSearchForm = document.querySelector('#food-search');
 if (foodSearchForm != null) {
     foodSearchForm.addEventListener('submit', async function(event) {
@@ -98,18 +97,42 @@ window.addEventListener('load', function() {
     }
 });
 
-const dropdown = document.querySelector('.custom-dropdown');
-const selectedOption = document.querySelector('.selected-option');
-const options = document.querySelector('.dropdown-options');
+document.addEventListener('DOMContentLoaded', function() {
+    // Select all workout options
+    const workoutOptions = document.querySelectorAll('.option');
 
-selectedOption.addEventListener('click', () => {
-    options.classList.toggle('hidden');
-});
+    // This function creates and returns the expanded details section
+    function createDetailsSection(content) {
+        const section = document.createElement('div');
+        section.classList.add('details-expanded');
+        section.innerHTML = content;
+        return section;
+    }
 
-options.querySelectorAll('.option').forEach(option => {
-    option.addEventListener('click', () => {
-        selectedOption.innerHTML = option.innerHTML;
-        options.classList.add('hidden');
+    // Add an event listener to each option
+    workoutOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            // Remove any existing details-expanded section
+            const existingDetails = document.querySelector('.details-expanded');
+            if (existingDetails) {
+                existingDetails.remove();
+            }
+
+            // Find the adjacent details element for the clicked option
+            const thisDetailContent = this.querySelector('.details').innerHTML;
+
+            // If the clicked option is the same as the previously clicked one, we just hide the details and return
+            if (this === window.lastClickedOption) {
+                window.lastClickedOption = null; // Reset the last clicked option
+                return;
+            }
+            window.lastClickedOption = this;
+
+            // Create the expanded details section and insert it below the current row of blocks
+            const expandedSection = createDetailsSection(thisDetailContent);
+            this.closest('.workout-options').after(expandedSection);
+            expandedSection.style.display = 'block'; // Display the new section
+        });
     });
 });
 

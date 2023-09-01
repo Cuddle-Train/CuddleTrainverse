@@ -85,7 +85,7 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: #5ad6ff;
     color: white;
 }
 
@@ -123,7 +123,7 @@ th {
     z-index: 1;
     max-height: 200px;
     overflow-y: auto;
-    width: fit-content; /* replace 100% with fit-content */
+    width: fit-content;
 }
 
 .suggestion {
@@ -185,7 +185,7 @@ th {
 
 .custom-dropdown {
     position: relative;
-    width: 100px; /* or whatever width you desire */
+    width: 100px;
 }
 
 .selected-option, .option {
@@ -223,10 +223,10 @@ th {
 }
 
 #workouts img {
-    max-width: 40px;  /* Adjust as needed */
+    max-width: 40px;
     max-height: 40px;
     vertical-align: middle;
-    margin-right: 10px;  /* Space between the image and the text */
+    margin-right: 10px;
 }
 
 #workouts span {
@@ -236,7 +236,7 @@ th {
 .workout-options {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* This line is changed */
+    justify-content: flex-start;
     align-content: flex-start;
 }
 
@@ -250,7 +250,7 @@ th {
     position: relative;
     text-align: center;
     line-height: 150px;
-    color: #fff;
+    color: #3dff2f;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -287,14 +287,6 @@ th {
     background-image: url('Images for BB Page/arm.png');
 }
 
-.workout-options .option[data-image-src="path_to_image6.jpg"]::before {
-    background-image: url('path_to_image6.jpg');
-}
-
-.workout-options .option[data-image-src="path_to_image7.jpg"]::before {
-    background-image: url('path_to_image7.jpg');
-}
-
 .workout-options .option span {
     position: relative;
     z-index: 1;  /* To ensure text always appears above the background image */
@@ -304,14 +296,28 @@ th {
     background-color: rgba(255,165,0, 0.7);
 }
 
+.details {
+    display: none;
+    padding: 10px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+}
+
+.details-expanded {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    display: none;  /* Initially hidden */
+    box-sizing: border-box; /* To include padding in width */
+}
+
+
+
 .parallax-container {
-    /* Set the height of the container */
-    height: 70vh;  /* Adjust based on how much of the viewport height you want it to cover */
-    
-    /* Set the background image */
+    height: 70vh;
     background-image: url("Images for BB Page/parallax-gym.webp");
-    
-    /* Create the parallax effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -324,5 +330,5 @@ th {
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    color: rgb(255, 255, 255);  /* Adjust text color if needed */
+    color: rgb(255, 255, 255);
 }
