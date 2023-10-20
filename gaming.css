@@ -1,24 +1,24 @@
 body {
-    background-color: #121212; /* a dark grey */
-    color: #f0f0f0; /* a light grey */
+    background-color: #121212;
+    color: #f0f0f0;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #1F1F1F; /* slightly lighter than the body background */
+    background-color: #1F1F1F;
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
-    color: #ff4747; /* a vibrant red */
+    color: #ff4747;
     margin: 0;
 }
 
 nav {
-    background-color: #1F1F1F; /* same as header */
+    background-color: #1F1F1F;
     padding: 10px;
 }
 
@@ -39,7 +39,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff4747; /* same red as header */
+    color: #ff4747;
 }
 
 main {
@@ -47,18 +47,17 @@ main {
 }
 
 footer {
-    background-color: #1F1F1F; /* same as header and nav */
+    background-color: #1F1F1F;
     color: #f0f0f0;
     text-align: center;
     padding: 10px;
-    /*position: fixed;*/
     left: 0;
     bottom: 0;
     width: 100%;
 }
 
 button {
-    background-color: #ff4747; /* same red as header */
+    background-color: #ff4747;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -71,12 +70,12 @@ button {
 }
 
 button:hover {
-    background-color: #ff7474; /* a lighter red for hover effect */
+    background-color: #ff7474;
 }
 
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Changed from 560px to 200px */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
 }

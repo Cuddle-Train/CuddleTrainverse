@@ -126,19 +126,19 @@ body {
 }
 
 .social-icons .instagram:hover {
-    color: #E1306C; /* Instagram's brand color */
+    color: #E1306C;
 }
 
 .social-icons .twitter:hover {
-    color: #1DA1F2; /* Twitter's brand color */
+    color: #1DA1F2;
 }
 
 .social-icons .youtube:hover {
-    color: #FF0000; /* YouTube's brand color */
+    color: #FF0000;
 }
 
 .social-icons .snapchat:hover {
-    color: #FFFC00; /* Snapchat's brand color */
+    color: #FFFC00;
 }
 
 .page-links {

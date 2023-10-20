@@ -1,4 +1,3 @@
-// Get all shorts videos
 const shortsVideos = document.querySelectorAll('.shorts-video');
 
 shortsVideos.forEach((video, index) => {

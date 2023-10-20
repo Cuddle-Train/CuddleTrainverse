@@ -1,0 +1,192 @@
+#personal-info-form {
+    width: 70%;
+    margin: 30px auto;
+    background: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#personal-info-form label {
+    display: block;
+    margin: 10px 0;
+}
+
+#personal-info-form input[type="text"],
+#personal-info-form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#personal-info-form input[type="submit"] {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+#personal-info-form input[type="submit"]:hover {
+    background-color: #444;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #24292E;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #24292E;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 20px 0;
+    background-color: #24292E;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #373737;
+}
+
+button:hover {
+    background-color: #373737;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #5ad6ff;
+    color: white;
+}
+
+#home-button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #24292E;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #373737;
+}
+
+.social-icons {
+    display: flex;
+    padding: 1rem;
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.social-icons li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-icons li a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.5s;
+}
+
+.social-icons .instagram:hover {
+    color: #E1306C;
+}
+
+.social-icons .twitter:hover {
+    color: #1DA1F2;
+}
+
+.social-icons .youtube:hover {
+    color: #FF0000;
+}
+
+.social-icons .snapchat:hover {
+    color: #FFFC00;
+}
+
+.parallax-container {
+    height: 50vh;
+    background-image: url("Images for BB Page/Training-plan-banner.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.parallax-content {
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
